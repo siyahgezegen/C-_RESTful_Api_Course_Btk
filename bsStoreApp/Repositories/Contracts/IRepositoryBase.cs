@@ -7,9 +7,13 @@ using System.Threading.Tasks;
 
 namespace Repositories.Contracts
 {
+    /*
+     Farklı farklı sınıflar üzerinde aynı işlemleri yapabilmek için Generic Programlama yaklaşımı var
+     trackChanges değişikliklerin incelenip incelenmemesi için kullanılacak
+     */
     public interface IRepositoryBase<T>
     {
-        // Query ifadeler tanımlanacak
+        // CRUD operations
         IQueryable<T> FindAll(bool trackChanges);
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges);
         void Create(T entity);

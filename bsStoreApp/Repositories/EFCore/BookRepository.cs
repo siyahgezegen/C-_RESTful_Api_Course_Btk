@@ -14,7 +14,6 @@ namespace Repositories.EFCore
         {
 
         }
-
         public void CreateOneBook(Book book) => Create(book);
 
         public void DeleteOneBook(Book book) => Delete(book);

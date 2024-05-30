@@ -21,7 +21,6 @@ namespace Repositories.EFCore
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
             modelBuilder.ApplyConfiguration(new BookConfig());
         }
     }

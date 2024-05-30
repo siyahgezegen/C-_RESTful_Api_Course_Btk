@@ -17,8 +17,6 @@ namespace Repositories.EFCore
         {
             _context = context;
         }
-        public void Create(T entity) => _context.Set<T>().Add(entity);
-        public void Delete(T entity) => _context.Set<T>().Remove(entity);
         public IQueryable<T> FindAll(bool trackChanges) =>
             !trackChanges ?
             _context.Set<T>().AsNoTracking() :
@@ -27,6 +25,8 @@ namespace Repositories.EFCore
             !trackChanges ?
             _context.Set<T>().Where(expression).AsNoTracking() :
             _context.Set<T>().Where(expression);
+        public void Create(T entity) => _context.Set<T>().Add(entity);
         public void Update(T entity) => _context.Set<T>().Update(entity);
+        public void Delete(T entity) => _context.Set<T>().Remove(entity);
     }
 }
