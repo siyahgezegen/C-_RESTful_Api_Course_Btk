@@ -1,10 +1,13 @@
-﻿using Entities.Models;
+﻿using Entities.DTOs;
+using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Mvc;
 using Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace Presentation.Controllers
@@ -21,12 +24,14 @@ namespace Presentation.Controllers
         }
         #region httpRequests
         [HttpGet]
-        public IActionResult GetAllBooks()
+        public IActionResult GetAllBooks([FromQuery] BookParameters bookParameters)
         {
             try
             {
-                var books = _manager.BookServices.GetAllBooks(false);
-                return Ok(books);
+                var pagedResult = _manager.BookServices.GetAllBooks(bookParameters,false);
+                Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(pagedResult.metaData));
+
+                return Ok(pagedResult.books);
             }
             catch (Exception ex)
             {
@@ -69,7 +74,7 @@ namespace Presentation.Controllers
             }
         }
         [HttpPut("{id:int}")]
-        public IActionResult UpdateOneBook([FromRoute] int id, [FromBody] Book book)
+        public IActionResult UpdateOneBook([FromRoute] int id, [FromBody] BookDtoForUpdate book)
         {
             try
             {

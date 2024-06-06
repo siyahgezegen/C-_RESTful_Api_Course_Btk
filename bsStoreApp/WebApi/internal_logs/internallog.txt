@@ -44,3 +44,45 @@
 2024-05-30 14:02:24.6739 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
 2024-05-30 14:02:24.6739 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
 2024-05-30 14:02:24.6739 Info Configuration initialized.
+2024-06-03 13:34:16.6918 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-03 13:34:16.7091 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-03 13:34:16.7091 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-03 13:34:16.7253 Info Configuration initialized.
+2024-06-03 13:34:17.2060 Info AppDomain Shutting down. LogFactory closing...
+2024-06-03 13:34:17.2060 Info LogFactory has been closed.
+2024-06-03 13:34:21.1249 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-03 13:34:21.1358 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-03 13:34:21.1442 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-03 13:34:21.1442 Info Configuration initialized.
+2024-06-03 13:34:21.4764 Info AppDomain Shutting down. LogFactory closing...
+2024-06-03 13:34:21.4764 Info LogFactory has been closed.
+2024-06-03 13:34:29.3347 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-03 13:34:29.3463 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-03 13:34:29.3463 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-03 13:34:29.3463 Info Configuration initialized.
+2024-06-03 13:34:29.8138 Info AppDomain Shutting down. LogFactory closing...
+2024-06-03 13:34:29.8138 Info LogFactory has been closed.
+2024-06-03 13:45:49.2086 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-03 13:45:49.3079 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-03 13:45:49.3174 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-03 13:45:49.3174 Info Configuration initialized.
+2024-06-06 05:48:47.6201 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-06 05:48:47.6893 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-06 05:48:47.6893 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-06 05:48:47.7069 Info Configuration initialized.
+2024-06-06 06:22:21.0979 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-06 06:22:21.1260 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-06 06:22:21.1260 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-06 06:22:21.1426 Info Configuration initialized.
+2024-06-06 06:43:19.5581 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-06 06:43:19.5841 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-06 06:43:19.5915 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-06 06:43:19.5915 Info Configuration initialized.
+2024-06-06 06:51:29.9827 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-06 06:51:30.0221 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-06 06:51:30.0335 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-06 06:51:30.0445 Info Configuration initialized.
+2024-06-06 07:03:56.1698 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-06-06 07:03:56.1978 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.8.2366. Product version: 5.2.8+f586f1341c46fa38aaaff4c641e7f0fa7e813943. GlobalAssemblyCache: False
+2024-06-06 07:03:56.2115 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\omerkaraman\Documents\GithubRepos\C-_RESTful_Api_Course_Btk\bsStoreApp\WebApi\nlog.config
+2024-06-06 07:03:56.2253 Info Configuration initialized.

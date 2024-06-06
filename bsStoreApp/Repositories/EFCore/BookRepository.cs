@@ -1,4 +1,6 @@
-﻿using Entities.Models;
+﻿using Entities.DTOs;
+using Entities.Models;
+using Entities.RequestFeatures;
 using Repositories.Contracts;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Repositories.EFCore
 {
-    public class BookRepository : RepositoryBase<Book>, IBookRepository
+    public sealed class BookRepository : RepositoryBase<Book>, IBookRepository
     {
         public BookRepository(RepositoryContext context) : base(context)
         {
@@ -18,13 +20,23 @@ namespace Repositories.EFCore
 
         public void DeleteOneBook(Book book) => Delete(book);
 
-        public IQueryable<Book> GetAllBooks(bool trackChanges) =>
-            FindAll(trackChanges)
+        public PagedList<Book> GetAllBooks(BookParameters bookParameters, bool trackChanges)
+        {
+            var books =
+            FindAll(trackChanges).FilterBooks(bookParameters.MinPrice,bookParameters.MaxPrice)
             .OrderBy(x => x.Id);
+            return PagedList<Book>
+                .ToPagedList(books, bookParameters.PageNumber, bookParameters.PageSize);
+        }
 
         public Book GetOneBook(int id, bool trackChanges) =>
             FindByCondition(b => b.Id.Equals(id), trackChanges).SingleOrDefault();
 
-        public void UpdateOneBook(Book book) => Update(book);
+        //public void UpdateOneBook(Book book) => Update(book);
+
+        public void UpdateOneBook(BookDtoForUpdate book)
+        {
+            //  
+        }
     }
 }

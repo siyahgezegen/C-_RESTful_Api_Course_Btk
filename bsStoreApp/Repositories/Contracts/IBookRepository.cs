@@ -1,4 +1,6 @@
-﻿using Entities.Models;
+﻿using Entities.DTOs;
+using Entities.Models;
+using Entities.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +11,10 @@ namespace Repositories.Contracts
 {
     public interface IBookRepository : IRepositoryBase<Book>
     {
-        IQueryable<Book> GetAllBooks(bool trackChanges);
+        PagedList<Book> GetAllBooks(BookParameters bookParameters, bool trackChanges);
         Book GetOneBook(int id, bool trackChanges);
         void CreateOneBook(Book book);
-        void UpdateOneBook(Book book);
+        void UpdateOneBook(BookDtoForUpdate book);
         void DeleteOneBook(Book book);
 
     }

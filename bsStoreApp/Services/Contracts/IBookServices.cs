@@ -1,4 +1,6 @@
-﻿using Entities.Models;
+﻿using Entities.DTOs;
+using Entities.Models;
+using Entities.RequestFeatures;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,10 +12,10 @@ namespace Services.Contracts
     
     public interface IBookServices
     {
-        IEnumerable<Book> GetAllBooks(bool trackChanges);
+        (IEnumerable<Book> books,MetaData metaData) GetAllBooks(BookParameters bookParameters, bool trackChanges);
         Book GetBook(int id, bool trackChanges);
         Book CreateOneBook(Book book);
-        void UpdateOneBook(int id, Book book, bool trackChanges);
+        void UpdateOneBook(int id, BookDtoForUpdate bookDto, bool trackChanges);
         void DeleteOneBook(int id, bool trackChanges);
 
     }
